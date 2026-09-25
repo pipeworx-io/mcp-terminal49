@@ -3,7 +3,7 @@
   "name": "io.github.pipeworx-io/terminal49",
   "title": "Terminal49",
   "description": "Terminal49 MCP — wraps the Terminal49 ocean/container shipment tracking API",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "websiteUrl": "https://pipeworx.io/packs/terminal49",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-terminal49",
