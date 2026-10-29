@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-terminal49",
-  "version": "0.1.2",
-  "description": "Terminal49 MCP — wraps the Terminal49 ocean/container shipment tracking API",
+  "version": "0.2.0",
+  "description": "Terminal49 MCP — wraps the Terminal49 ocean/container shipment tracking API (https://api.terminal49.com/v2).",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-terminal49": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "terminal49"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-terminal49.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/terminal49",
   "pipeworx": {
-    "sourceHash": "v1-297f9678ca4bbabb13f992c43006522028c5cdf16d4b35f0d1f06003de3b0b31",
-    "sourceCommit": "d4a9636716f113458bd312e487c065f76548df8c"
+    "mode": "gateway",
+    "slug": "terminal49",
+    "gatewaySlug": "terminal49",
+    "sourceHash": "v1-90683f10292cb3dd5e4ed2386fb69898036f7e34f263b797a5b8da7e9eee89a7",
+    "sourceCommit": "f47d581679e1e887373df51ba623f891fbe4c464"
   }
 }
